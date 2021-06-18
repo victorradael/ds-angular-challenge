@@ -1,0 +1,27 @@
+<header>
+  <div></div>
+  <img src="../../../assets/images/Logo-DataSprints-1.png" alt="" />
+  <input type="text" />
+</header>
+<div class="container" *ngIf="devs.length > 0; else noDevs">
+  <div class="card" *ngFor="let dev of devs">
+    <a routerLink="/dev-info">
+      <p>{{ dev?.name }}</p>
+      <p>{{ dev?.city }}</p>
+      <p>{{ dev?.techs }}</p>
+      <p>{{ dev?.date | date: "shortDate" }}</p>
+    </a>
+
+    <img
+      src="{{ dev?.avatarUrl }}"
+      alt="Foto de Perfil"
+      *ngIf="dev.avatarUrl; else noImage"
+    />
+  </div>
+</div>
+
+<ng-template #noDevs> </ng-template>
+
+<ng-template #noImage>
+  <img src="../../../assets/images/github-cat.png" alt="" />
+</ng-template>

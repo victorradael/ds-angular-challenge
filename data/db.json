@@ -1,0 +1,37 @@
+{
+  "devs": [
+    {
+      "githubUsername": "",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/53879758?v=4",
+      "name": "Victor Radael",
+      "email": "victorradael@email.com",
+      "city": "Ouro Branco",
+      "formation": "Eng. Mecatrônica",
+      "techs": "Angular, ReactJS, React Native, NodeJS",
+      "date": "2021-06-18T07:24:25.892Z",
+      "id": 1
+    },
+    {
+      "githubUsername": "",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2254731?v=4",
+      "name": "Diego Fernandes",
+      "email": "",
+      "city": "Rio do Sul - SC",
+      "formation": "",
+      "techs": "React FULL",
+      "date": "2021-06-18T07:26:11.024Z",
+      "id": 2
+    },
+    {
+      "githubUsername": "",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/4248081?v=4",
+      "name": "Filipe Deschamps",
+      "email": "",
+      "city": "... - Canada",
+      "formation": "",
+      "techs": "Muita coisa",
+      "date": "2021-06-18T07:56:29.653Z",
+      "id": 3
+    }
+  ]
+}

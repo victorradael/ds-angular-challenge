@@ -1,0 +1,62 @@
+<form class="dev-form" [formGroup]="newDevForm" (submit)="registerNewDev()">
+  <div>
+    <button class="github-button" (click)="githubGetUserInfo()">
+      <img src="assets/images/github-cat.svg" alt="Github Logo" />
+      Preencher com Github
+    </button>
+    <label for="githubUsername">Usuário Github</label>
+    <input class="github-input" type="text" formControlName="githubUsername" />
+  </div>
+  <div class="borders">
+    <label for="avatarUrl">Avatar (URL)</label>
+    <input type="text" id="avatarUrl" formControlName="avatarUrl" />
+
+    <label for="name">Nome</label>
+    <input type="text" id="name" formControlName="name" />
+    <app-message
+      *ngIf="
+        newDevForm.get('name')?.errors?.required &&
+        newDevForm.get('name')?.touched
+      "
+      message="Campo Obrigatório"
+    ></app-message>
+    <label for="email">Email</label>
+    <input type="text" id="email" formControlName="email" />
+    <app-message
+      *ngIf="
+        newDevForm.get('email')?.errors?.required &&
+        newDevForm.get('email')?.touched
+      "
+      message="Campo Obrigatório"
+    ></app-message>
+    <label for="city">Cidade</label>
+    <input type="text" id="city" formControlName="city" />
+    <app-message
+      *ngIf="
+        newDevForm.get('city')?.errors?.required &&
+        newDevForm.get('city')?.touched
+      "
+      message="Campo Obrigatório"
+    ></app-message>
+  </div>
+  <div>
+    <label for="formation">Formação</label>
+    <input type="text" id="formation" formControlName="formation" />
+    <label for="techs">Tecnologias</label>
+    <textarea
+      placeholder="Angular, React, Vue, etc"
+      id="techs"
+      cols="30"
+      rows="6"
+      formControlName="techs"
+    ></textarea>
+    <app-message
+      *ngIf="
+        newDevForm.get('techs')?.errors?.required &&
+        newDevForm.get('techs')?.touched
+      "
+      message="Campo Obrigatório"
+    ></app-message>
+    <button class="submit-button" type="submit">Cadastrar</button>
+  </div>
+</form>

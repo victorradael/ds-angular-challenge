@@ -1,3 +1,7 @@
+# To Simulate
+
+Install JSON Server with command `npm install -g json-server` and run `json-server --watch data/db.json `
+
 # DsChallenge
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
